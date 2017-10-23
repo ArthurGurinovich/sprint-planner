@@ -1,0 +1,32 @@
+$sections: 6;
+
+footer{
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #F3F3F3;
+    box-shadow: 0 -3px 5px #F3F3F3;
+    position: fixed;
+    padding: 20px 50px;
+    .section{
+        width: 100%/$sections;
+        margin: 5px;
+        padding: 10px;
+        display: inline-block;
+        color: #242424;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        a{
+                color: #e91e63;
+                text-decoration: none;
+                font-weight: 400;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 0.9rem;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+    }
+}

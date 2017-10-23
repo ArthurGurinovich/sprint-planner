@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,600,700');
+@import "./header/_index";
+@import "./footer/_index";
+@import "./profile/_index";
+@import "./questions/_index";
+
+
+body{
+    background-color: #F8F8F8;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+    padding: 120px 50px;
+    margin: 0 auto;
+}

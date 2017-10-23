@@ -1,0 +1,25 @@
+{
+  "name": "light-fe",
+  "version": "1.0.0",
+  "description": "Ligth FE project",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "fe",
+    "gulp"
+  ],
+  "author": "Arthur",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uncss": "^1.0.6"
+  }
+}

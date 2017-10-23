@@ -1,0 +1,8 @@
+.testing2 {
+    width: pecentage(7/8);
+    font-size: 18px;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
