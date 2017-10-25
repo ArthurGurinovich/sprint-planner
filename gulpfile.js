@@ -22,7 +22,7 @@ gulp.task('css', function () {
         }))
     .pipe(cleanCSS())
     .pipe(uncss({
-        html: ['./app/index.html', './app/users/*.html']
+        html: ['./app/index.html', './app/users/*.html','./app/login/*.html']
     }))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('app/css/'));

@@ -1,0 +1,74 @@
+$color_gray: #969696;
+$color_gray_l: #F3F3F3;
+$color_white: #ffffff;
+$color_blue: #2196f3;
+$color_black: #242424;
+
+$violet: #8175F7;
+$sky: #59A9FC;
+.page-title{
+    font-family: 'Montserrat', sans-serif;
+    h1{
+        font-weight: 400;
+    }
+    
+}
+.user{
+    position: relative;
+    width: 180px;
+    margin: 10px 5px;
+    background-color: #ffffff;
+    border: 1px solid #F3F3F3;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #F3F3F3;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    &:hover{
+       box-shadow: 0 0 10px  #9e9e9e;
+       .actions{
+            visibility: visible;
+            &:hover{
+                cursor: pointer;
+            }
+       }
+    }
+    .info{
+        display: inline-block;
+        vertical-align: top;
+        padding: 30px;
+        text-align: center;
+        .avatar{
+            margin: 5px;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+            }
+        }
+        .username{
+            line-height: 20px;
+            font-weight: 500;
+            font-size: 0.8rem;
+            font-family: 'Montserrat', sans-serif;
+            a{
+                color: $color_black;
+                text-decoration: none;
+                &:hover{
+                    color: $color_blue;
+                    cursor: pointer;
+                }
+            }
+           
+        }
+        .position{
+            color: $color_gray;
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    
+}

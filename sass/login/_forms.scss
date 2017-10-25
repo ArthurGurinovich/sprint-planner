@@ -1,0 +1,124 @@
+$color_gray: #969696;
+$color_gray_l: #F3F3F3;
+$color_white: #ffffff;
+$color_blue: #2196f3;
+$color_black: #242424;
+
+$violet: #8175F7;
+$sky: #59A9FC;
+
+.account_form{
+    margin: 10% auto;
+    padding: 50px;
+    background-color: $color_white;
+    border-radius: 7px;
+    width: 300px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    border: 1px solid $color_gray_l;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #d3d3d3;
+    h1{
+       margin: 5px 0; 
+       font-size: 1.6rem;
+       font-weight: 500;
+    }
+    h6{
+        margin-top: 20px; 
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: $color_black;
+        text-align: center;
+        a{
+            color: $color_blue;
+            text-decoration: none;
+            &:hover{
+                cursor: pointer;
+            } 
+        }
+    }
+    p {
+        color: $color_gray;
+        margin: 0;
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    .head{
+        .logo{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 50px;
+            .icon{
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                // background-color: $color_blue;
+                background: linear-gradient(to bottom right, $violet, $color_blue);
+                color: $color_white;
+                font-size: 1.5rem;
+                text-align: center;
+                line-height: 40px;
+                display: inline-block;
+            }
+            .title{
+                margin-left: 7px;
+                font-size: 0.9rem;
+                text-align: left;
+                vertical-align: bottom;
+                display: inline-block;
+            }
+        } 
+    }
+    .forgot{
+        display: block;
+        margin-top: 30px;
+        color: $color_black;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        transition: color 0.2s;
+        &:hover{
+            cursor: pointer;
+            color: $color_blue;
+        }
+    }
+    input{
+        display: block;
+        margin-top: 30px;
+        border: none;
+        border-bottom: 1px solid #E5E5E5;
+        width: 100%;
+        padding: 5px;
+        outline: none;
+        font-family: Montserrat,sans-serif;
+        font-weight: 400;
+        font-size: 0.8rem;
+        &[type="submit"]{
+            margin: 30px 0 10px;
+            padding: 12px 20px;;
+            background: linear-gradient(to bottom right, $violet, $color_blue);
+            color: $color_white;
+            border: none;
+            border-radius: 5px;
+            font-family: Montserrat,sans-serif;
+            font-weight: 500;
+            width: 100%;
+            font-size: 0.9rem;
+            transition: box-shadow 0.5s;
+            &:hover{
+                box-shadow: 0 5px 20px $color_gray;
+            }
+        }
+        &[type="text"]:focus{
+           border-bottom: 1px solid $color_blue; 
+        }
+        &[type="password"]:focus{
+           border-bottom: 1px solid $color_blue; 
+        }
+        &::placeholder{
+            color: $color_gray;
+        }
+    }
+   
+}
