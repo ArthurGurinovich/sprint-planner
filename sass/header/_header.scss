@@ -9,14 +9,15 @@ $sky: #59A9FC;
 
 
 header{
-    padding: 20px 50px;
+    padding: 15px 50px;
     height: 50px;
     width: 100%;
     background-color: #ffffff;
     border-bottom: 1px solid #F3F3F3;
-    box-shadow: 0 3px 5px #F3F3F3;
+    // box-shadow: 0 3px 5px #F3F3F3;
     position: fixed;
     top: 0;
+    z-index: 3;
     .logo{
             font-family: 'Montserrat', sans-serif;
             font-weight: 500;

@@ -8,11 +8,8 @@ $color_black: #242424;
 footer{
     width: 100%;
     background-color: #ffffff;
-    position: fixed;
-    bottom: 0;
     border-top: 1px solid #F3F3F3;
-    box-shadow: 0 -3px 5px #F3F3F3;
-    position: fixed;
+    // box-shadow: 0 -3px 5px #F3F3F3;
     padding: 10px 50px;
     .section{
         width: 100%/$sections;

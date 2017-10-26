@@ -1,8 +1,41 @@
-.testing2 {
-    width: pecentage(7/8);
-    font-size: 18px;
-}
+$color_gray: #969696;
+$color_gray_l: #F3F3F3;
+$color_white: #ffffff;
+$color_blue: #2196f3;
+$color_black: #242424;
 
-@mixin font-size($size) {
-  font-size: $size;
+$violet: #8175F7;
+$sky: #59A9FC;
+
+
+.profile{
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #F3F3F3;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #F3F3F3;
+    display: block;
+    padding: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    .image{
+		margin: 5px;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+            }
+    }
+    .username{
+
+    }
+    .position{
+			color: $color_gray;
+            line-height: 20px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            font-family: 'Montserrat', sans-serif;
+    }
 }

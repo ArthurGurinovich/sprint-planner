@@ -37,8 +37,10 @@ $sky: #59A9FC;
     .info{
         display: inline-block;
         vertical-align: top;
-        padding: 30px;
+        padding: 30px 10px;
         text-align: center;
+        margin: 20px;
+        border-bottom: 1px solid $color_gray_l;
         .avatar{
             margin: 5px;
             img{

@@ -1,7 +1,75 @@
 @import "_account";
 @import "_users";
 
+
+$color_gray: #969696;
+$color_gray_l: #F3F3F3;
+$color_white: #ffffff;
+$color_blue: #2196f3;
+$color_black: #242424;
+
+$violet: #8175F7;
+$sky: #59A9FC;
+
 .list{
     display: block;
     position: relative;
 }
+
+#header_promo {
+position: relative;
+overflow: hidden;
+background-size: cover; 
+margin-top: 80px;
+font-family: 'Montserrat', sans-serif;
+  .teaser-video{
+  	position: absolute;
+  	top: 0;
+	width: 100%;
+  }
+.header_video{
+  position: relative;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(51,51,51,0.37);
+  z-index: 2;
+  height: 600px;
+
+  .header_info{
+	padding: 150px 0 200px;
+	h1{
+		font-size: 2rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+  }
+	.video_button{
+  		text-decoration: none;
+  		display: inline-block;
+        width: 150px;
+        outline: none;
+        margin: 30px;
+        padding: 12px 20px;;
+        background: linear-gradient(to bottom right, $violet, $color_blue);
+        color: $color_white;
+        border: none;
+        border-radius: 5px;
+        font-family: Montserrat,sans-serif;
+        font-weight: 500;
+        font-size: 0.9rem;
+        transition: box-shadow 0.5s;
+	        &:hover{
+	            box-shadow: 0 5px 20px $color_gray;
+	        }
+		}
+	}
+}
+
+
+
+
+   
+
