@@ -67,11 +67,10 @@ footer {
   width: 100%;
   background-color: #ffffff;
   border-top: 1px solid #F3F3F3;
-  padding: 10px 50px; }
+  padding: 20px 0; }
   footer .section {
-    width: 16.66667%;
-    margin: 5px;
-    padding: 10px;
+    width: 20%;
+    padding: 0 0 0 50px;
     display: inline-block;
     color: #242424;
     font-size: 1rem;
@@ -121,7 +120,110 @@ footer {
 
 .profile {
   position: relative;
-  width: 100%;
+  width: 30%;
+  margin: 10px;
+  background-color: #ffffff;
+  border: 1px solid #F3F3F3;
+  border-radius: 7px;
+  box-shadow: 0 0 10px #F3F3F3;
+  display: inline-block;
+  padding: 20px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif; }
+  .profile .info {
+    padding: 0 0 20px 0;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif; }
+    .profile .info .image {
+      display: inline-block;
+      margin: 5px; }
+      .profile .info .image img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%; }
+    .profile .info .account {
+      display: inline-block;
+      padding: 20px 0 0 20px;
+      vertical-align: top; }
+      .profile .info .account .username {
+        color: #242424;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 5px; }
+      .profile .info .account .status {
+        color: #61DC73;
+        display: inline-block;
+        font-weight: 500;
+        border-right: 1px solid #F3F3F3;
+        margin-right: 5px;
+        padding-right: 5px; }
+      .profile .info .account .position {
+        color: #969696;
+        font-weight: 500;
+        display: inline-block; }
+      .profile .info .account .email {
+        color: #969696;
+        margin-top: 5px; }
+    .profile .info input {
+      display: block;
+      border: none;
+      border-bottom: 1px solid #E5E5E5;
+      width: 100%;
+      padding: 5px;
+      margin: 10px 0;
+      outline: none;
+      font-family: Montserrat,sans-serif;
+      font-weight: 400;
+      font-size: 0.8rem; }
+      .profile .info input[type="submit"] {
+        margin: 30px 0 10px;
+        padding: 12px 20px;
+        background: linear-gradient(to bottom right, #8175F7, #2196f3);
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-family: Montserrat,sans-serif;
+        font-weight: 500;
+        width: 100%;
+        font-size: 0.9rem;
+        transition: box-shadow 0.5s; }
+        .profile .info input[type="submit"]:hover {
+          box-shadow: 0 5px 20px #969696; }
+      .profile .info input[type="text"]:focus {
+        border-bottom: 1px solid #2196f3; }
+      .profile .info input[type="password"]:focus {
+        border-bottom: 1px solid #2196f3; }
+      .profile .info input[type="email"]:focus {
+        border-bottom: 1px solid #2196f3; }
+      .profile .info input::placeholder {
+        color: #969696; }
+  .profile .actions {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff; }
+    .profile .actions .action {
+      text-align: center;
+      padding: 3px 10px;
+      margin: 5px 0;
+      background-color: #2196f3;
+      border-radius: 25px;
+      font-size: 0.8rem; }
+      .profile .actions .action:hover {
+        cursor: pointer; }
+  .profile .password {
+    position: relative;
+    border-top: 1px solid #F3F3F3;
+    padding: 20px 0 0 20px;
+    font-weight: 400px; }
+    .profile .password:hover {
+      cursor: pointer; }
+
+.questions {
+  position: relative;
+  width: 30%;
   margin: 10px;
   background-color: #ffffff;
   border: 1px solid #F3F3F3;
@@ -131,23 +233,12 @@ footer {
   padding: 20px;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif; }
-  .profile .image {
-    margin: 5px; }
-    .profile .image img {
-      width: 200px;
-      height: 200px;
-      border-radius: 100%; }
-  .profile .position {
-    color: #969696;
-    line-height: 20px;
-    font-weight: 400;
-    font-size: 0.8rem;
-    font-family: 'Montserrat', sans-serif; }
 
 .page-title {
   font-family: 'Montserrat', sans-serif; }
   .page-title h1 {
-    font-weight: 400; }
+    font-weight: 500;
+    font-size: 1.4rem; }
 
 .user {
   position: relative;

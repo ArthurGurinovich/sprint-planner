@@ -4,13 +4,141 @@ $color_white: #ffffff;
 $color_blue: #2196f3;
 $color_black: #242424;
 
+$color_green: #61DC73;
+
 $violet: #8175F7;
 $sky: #59A9FC;
 
 
 .profile{
     position: relative;
-    width: 100%;
+    width: 30%;
+    margin: 10px;
+    background-color: #ffffff;
+    border: 1px solid #F3F3F3;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #F3F3F3;
+    display: inline-block;
+    padding: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    .info{
+        padding: 0 0 20px 0;
+        line-height: 20px;
+        font-weight: 400;
+        font-size: 0.8rem;
+        font-family: 'Montserrat', sans-serif;
+        .image{
+            display: inline-block;
+            margin: 5px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100%;
+                }
+        }
+        .account{
+            display: inline-block;
+            padding: 20px 0 0 20px;
+            vertical-align: top;
+            .username{
+                color: $color_black;
+                font-weight: 500;
+                font-size: 1rem;
+                 margin-bottom: 5px;
+            }
+            .status{
+                color: $color_green;
+                display: inline-block;
+                font-weight: 500;
+                border-right: 1px solid $color_gray_l;
+                margin-right: 5px;
+                padding-right: 5px;
+            }
+            .position{
+                color: $color_gray;
+                font-weight: 500;
+                display: inline-block;
+            }
+            .email{
+                color: $color_gray;
+                margin-top: 5px;
+            }
+        }
+        input{
+            display: block;
+            border: none;
+            border-bottom: 1px solid #E5E5E5;
+            width: 100%;
+            padding: 5px;
+            margin: 10px 0;
+            outline: none;
+            font-family: Montserrat,sans-serif;
+            font-weight: 400;
+            font-size: 0.8rem;
+            &[type="submit"]{
+                margin: 30px 0 10px;
+                padding: 12px 20px;;
+                background: linear-gradient(to bottom right, $violet, $color_blue);
+                color: $color_white;
+                border: none;
+                border-radius: 5px;
+                font-family: Montserrat,sans-serif;
+                font-weight: 500;
+                width: 100%;
+                font-size: 0.9rem;
+                transition: box-shadow 0.5s;
+                &:hover{
+                    box-shadow: 0 5px 20px $color_gray;
+                }
+            }
+            &[type="text"]:focus{
+            border-bottom: 1px solid $color_blue; 
+            }
+            &[type="password"]:focus{
+            border-bottom: 1px solid $color_blue; 
+            }
+            &[type="email"]:focus{
+            border-bottom: 1px solid $color_blue; 
+            }
+            &::placeholder{
+                color: $color_gray;
+            }
+        }
+    }
+
+
+    .actions{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        .action{
+            text-align: center;
+            padding: 3px 10px;
+            margin: 5px 0;
+            background-color: $color_blue;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .password{
+        position: relative;
+        border-top: 1px solid $color_gray_l;
+        padding: 20px 0 0 20px;
+        font-weight: 400px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.questions{
+    position: relative;
+    width: 30%;
     margin: 10px;
     background-color: #ffffff;
     border: 1px solid #F3F3F3;
@@ -20,22 +148,4 @@ $sky: #59A9FC;
     padding: 20px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    .image{
-		margin: 5px;
-            img{
-                width: 200px;
-                height: 200px;
-                border-radius: 100%;
-            }
-    }
-    .username{
-
-    }
-    .position{
-			color: $color_gray;
-            line-height: 20px;
-            font-weight: 400;
-            font-size: 0.8rem;
-            font-family: 'Montserrat', sans-serif;
-    }
 }

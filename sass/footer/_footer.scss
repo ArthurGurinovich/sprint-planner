@@ -1,4 +1,8 @@
-$sections: 6;
+$sections: 5;
+$padding_s: 50px;
+
+
+
 $color_gray: #969696;
 $color_gray_l: #F3F3F3;
 $color_white: #ffffff;
@@ -10,11 +14,10 @@ footer{
     background-color: #ffffff;
     border-top: 1px solid #F3F3F3;
     // box-shadow: 0 -3px 5px #F3F3F3;
-    padding: 10px 50px;
+    padding: 20px 0;
     .section{
         width: 100%/$sections;
-        margin: 5px;
-        padding: 10px;
+        padding: 0 0 0 50px;
         display: inline-block;
         color: #242424;
         font-size: 1rem;
