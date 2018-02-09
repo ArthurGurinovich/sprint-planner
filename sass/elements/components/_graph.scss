@@ -1,0 +1,21 @@
+.graph_line {
+    fill: none;
+    stroke-width: 1px
+}
+
+.graph_line_positive {
+    stroke: #35a947
+}
+
+.graph_line_negative {
+    stroke: #e34828
+}
+
+.graph_area_positive {
+    fill: url("#slPositiveGradient")
+}
+
+.graph_area_negative {
+    fill: url("#slNegativeGradient")
+}
+

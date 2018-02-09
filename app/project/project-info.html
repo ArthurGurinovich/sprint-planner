@@ -1,21 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>FE-Gulp</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../../css/style.css" rel="stylesheet">
-		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
-		<link rel="manifest" href="../favicon/manifest.json">
-		<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
-		<meta name="apple-mobile-web-app-title" content="Sprint Management">
-		<meta name="application-name" content="Sprint Management">
-		<meta name="theme-color" content="#ffffff">
-    </head>
-    <body>
-        <header>
+
+<head>
+    <title>FE-Gulp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="Sprint Management">
+    <meta name="application-name" content="Sprint Management">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="icon">
+                S
+            </div>
+            <div class="title">
+                <div>
+                    Sprint
+                </div>
+                <div>
+                    Management
+                </div>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" name="search" value="" placeholder="Find users">
+        </div>
+        <div class="lines">
+            <div class="section">
+                <a href="#">Projects</a>
+            </div>
+            <div class="section">
+                <a href="#">Questions</a>
+            </div>
+            <div class="section">
+                <a href="./users/users.html">Team</a>
+            </div>
+            <div class="section">
+                <a href="./login/signin.html">Sing In</a>
+            </div>
+        </div>
+
+    </header>
+    <div class="HeaderPage HeaderPage_btnBack">
+        <a class="BtnBack HeaderPage__btnBack active" aria-current="true" href="/en/collections">
+            <svg class="BtnBack__icon">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_general_left-line-arrow"></use>
+            </svg><span>Stocks Collections</span></a>
+        <div class="HeaderPage__wrapper iqWrapper">
+            <div class="HeaderPage__content">
+                <div class="HeaderPageContent">
+                    <h1 class="HeaderPageContent__title"><span>IT &amp; Internet Blue Chips</span></h1>
+                    <div class="HeaderPageContent__subtitle"><span>Internet companies are the greatest venues of opportunities  for the investors and now you can choose your own unicorn.</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="HeaderPage__bg">
+            <div class="HeaderPage__bgGradient" style="background-image: linear-gradient(rgba(11, 56, 130, 0.3) 0%, rgba(11, 56, 130, 0.8) 100%);"></div>
+            <div class="HeaderPage__bgImage" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/c0/0f3e7b3f8.jpg&quot;);"></div>
+        </div>
+    </div>
+    <div id="main" class="container">
+
+        <div data-index="0" class="slick-slide slick-active">
+            <div class="Comment__quote">
+                <div class="Comment__quoteInfo">
+                    <img class="Comment__quoteAvatar" src="../img/user1.jpeg">
+                    <div>
+                        <div class="Comment__quoteAuthor">
+                            <span>Билл Гейтс</span>
+                        </div>
+                        <div class="Comment__quotePosition">
+                            <span>Американский бизнес-магнат, соучредитель Microsoft</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Comment__quoteText">
+                    <span>Биткойны лучше, чем валюта, ведь с ними необязательно оставаться физически на одном месте. К тому же, иногда совершать крупные транзакции обычной валютой попросту неудобно.</span>
+                </div>
+            </div>
+        </div>
+
+        Risks
+        <div class="RiskSection">
+            <div class="Risk RiskSection__item">
+                <div class="Risk__wrapper">
+                    <div class="Risk__icon" style="background-image: url(&quot;https://static.iqoption.com/v5/static/images/try.263e6033f3fa7eec9e0e76d487862142.svg&quot;);">
+
+                    </div>
+                    <div class="Risk__content">
+                        <div class="Risk__date"><span>11 декабря 2017 г., 07:00</span></div>
+                        <div class="Risk__title"><span><span>GDP Growth Rate YoY</span></span>
+                        </div>
+                        <div class="Risk__currency"><span>TRY — турецкая лира</span></div>
+                    </div>
+                    <div class="Risk__projectionWrap">
+                        <div class="Risk__projection">
+                            <div class="Risk__projectionVal">10.0%</div>
+                            <div class="Risk__projectionUnit"><span>Прогноз</span></div>
+                        </div>
+                        <div class="Risk__projection">
+                            <div class="Risk__projectionVal">5.1%</div>
+                            <div class="Risk__projectionUnit"><span>Раньше</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Risk RiskSection__item">
+                <div class="Risk__wrapper">
+                    <div class="Risk__icon" style="background-image: url(&quot;https://static.iqoption.com/v5/static/images/try.263e6033f3fa7eec9e0e76d487862142.svg&quot;);"></div>
+                    <div class="Risk__content">
+                        <div class="Risk__date"><span>11 декабря 2017 г., 07:00</span></div>
+                        <div class="Risk__title"><span><span>GDP Growth Rate QoQ</span></span>
+                        </div>
+                        <div class="Risk__currency"><span>TRY — турецкая лира</span></div>
+                    </div>
+                    <div class="Risk__projectionWrap">
+                        <div class="Risk__projection">
+                            <div class="Risk__projectionVal">-</div>
+                            <div class="Risk__projectionUnit"><span>Прогноз</span></div>
+                        </div>
+                        <div class="Risk__projection">
+                            <div class="Risk__projectionVal">2.1%</div>
+                            <div class="Risk__projectionUnit"><span>Раньше</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="IncedentList__card">
+            <div class="IncedentItem">
+                <a class="IncedentItem__wrapper" aria-current="false" href="/ru/analysis/forex-market-economic-calendar-for-friday-8th-december-2017"><img class="IncedentItem__image" src="https://static.iqoption.com/v5/static/images/15.f1ba4ccea7a634f2a3544c3ac3deda50.jpg" alt="Stavros Georgiadis">
+                    <div class="IncedentItem__content">
+                        <div class="IncedentItem__title"><span>Forex Market Economic Calendar for Friday 8th December 2017</span></div>
+                        <div class="IncedentItem__info">
+                            <div class="IncedentItem__user">Stavros Georgiadis</div><span>2 дня назад</span></div>
+                        <div class="IncedentItem__tags"><span class="IncedentItem__tag">AUD</span><span class="IncedentItem__tag">CAD</span><span class="IncedentItem__tag">CHF</span><span class="IncedentItem__tag">EUR</span><span class="IncedentItem__tag">GBP</span><span class="IncedentItem__tag">JPY</span><span class="IncedentItem__tag">USD</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <a class="StoryStandard" aria-current="false" href="/ru/forex/EURJPY">
+            <div class="StoryStandardHeader">
+                <div class="StoryStandardHeader__bg" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/cc/efc3415fd.jpg&quot;);"><img class="StoryStandardHeader__round" src="https://static.iqoption.com/v5/static/images/mask.7fbee3fac85c8080dbf5c8a53fd69318.png"></div>
+                <div class="StoryStandardHeader__btn ignoreAsideClose">
+                    <div class="StoryStandardHeader__btnIcon" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/cb/bd5316287.svg&quot;);"></div>
+                    <div class="StoryStandardHeader__btnLabel"><span>Торговать </span></div>
+                </div>
+            </div>
+            <div class="StoryStandardContent StoryStandardContent_graph">
+                <div class="StoryStandardContent__title"><span><span>EUR/JPY</span></span>
+                </div>
+                <div class="StoryStandardContent__graph">
+                    <div class="StoryStandardContent__graphItem">
+                        <svg width="110" height="32">
+                            <path class="SparkLine__line SparkLine__line_positive" d="M0,17.557589352060145L1.1111111111111112,18.04146087725813L2.2222222222222223,18.49080471290882L3.3333333333333335,16.84906319016463L4.444444444444445,16.849132314668058L5.555555555555555,14.930892777525862L6.666666666666667,12.563343966984693L7.777777777777778,11.163572769093182L8.88888888888889,14.965455029326842L10,15.79491451027112L11.11111111111111,16.84906319016463L12.222222222222221,18.04146087725813L13.333333333333334,18.352521143457118L14.444444444444446,20.892846650743614L15.555555555555555,20.80647558349779L16.666666666666668,21.601407374894762L17.77777777777778,24.02076500088078L18.88888888888889,22.51727248533658L20,14.222332053376673L21.11111111111111,18.7845838532083L22.22222222222222,16.935468819664134L23.333333333333336,16.659005367517835L24.444444444444443,17.021874449163633L25.555555555555554,19.112925245306794L26.666666666666668,18.12790106901131L27.77777777777778,21.44584267954356L28.888888888888893,23.277676587186253L29.999999999999996,22.11984115189177L31.11111111111111,23.485015535732558L32.22222222222222,21.255750294643086L33.333333333333336,21.221222605095782L34.44444444444444,21.342155924142588L35.55555555555556,19.596831332756494L36.666666666666664,18.438961335210298L37.77777777777778,19.6658867118511L38.888888888888886,18.438961335210298L40,20.80647558349779L41.111111111111114,23.968921623182258L42.22222222222222,22.880210691487765L43.33333333333333,23.640580231083764L44.44444444444444,28.0645830237154L45.55555555555556,25.334096007023046L46.66666666666667,24.677413222826054L47.77777777777778,25.938935413521513L48.888888888888886,24.694694348725562L50,21.18662579104309L51.11111111111111,23.20855208358626L52.22222222222222,27.06220859701502L53.333333333333336,24.193541697628067L54.44444444444445,22.897491817387273L55.55555555555556,24.418196334327554L56.666666666666664,27.442393366814L57.777777777777786,21.445877241795273L58.88888888888889,19.49311001510381L59.99999999999999,21.670497316241082L61.111111111111114,26.422806938719503L62.22222222222222,28.2373942827144L63.333333333333336,30L64.44444444444444,28.7730746233592L65.55555555555556,26.388244686918522L66.66666666666667,22.08524433783908L67.77777777777777,20.4608876277515L68.88888888888889,13.496559327833367L70,4.389371416325268L71.11111111111111,8.346783809658426L72.22222222222223,11.612882042490192L73.33333333333333,13.35827575838167L74.44444444444444,7.8801588481082305L75.55555555555556,8.018442417559932L76.66666666666667,4.838680689724242L77.77777777777777,1.9008892867373L78.88888888888889,1.8663615971899965L80,0.3629036438975106L81.11111111111111,3.6808452544297587L82.22222222222223,3.300695046882492L83.33333333333333,5.287989963121252L84.44444444444444,7.448130700610729L85.55555555555556,7.534570892361945L86.66666666666666,7.9147556621589565L87.77777777777779,4.890524067422767L88.88888888888889,4.925086319221776L90,3.680914378933185L91.11111111111111,3.577158499028787L92.22222222222221,0.6220859701423329L93.33333333333334,0.017281125899508254L94.44444444444444,0L95.55555555555556,1.7108314640905036L96.66666666666667,0.9850241762954823L97.77777777777777,0.6393670960438058L98.88888888888889,1.2960498802388294L100,2.0910162338875153L101.11111111111111,2.747664455832794L102.22222222222221,2.747664455832794L103.33333333333334,4.3375280386267505L104.44444444444444,5.979234999119221L105.55555555555556,3.767250883927293L106.66666666666667,3.6117553130814777L107.77777777777777,5.547206851619755L108.8888888888889,1.8317647831373023L110,0.06912450359802591"></path>
+                            <path class="SparkLine__area SparkLine__area_positive" d="M0,17.557589352060145L1.1111111111111112,18.04146087725813L2.2222222222222223,18.49080471290882L3.3333333333333335,16.84906319016463L4.444444444444445,16.849132314668058L5.555555555555555,14.930892777525862L6.666666666666667,12.563343966984693L7.777777777777778,11.163572769093182L8.88888888888889,14.965455029326842L10,15.79491451027112L11.11111111111111,16.84906319016463L12.222222222222221,18.04146087725813L13.333333333333334,18.352521143457118L14.444444444444446,20.892846650743614L15.555555555555555,20.80647558349779L16.666666666666668,21.601407374894762L17.77777777777778,24.02076500088078L18.88888888888889,22.51727248533658L20,14.222332053376673L21.11111111111111,18.7845838532083L22.22222222222222,16.935468819664134L23.333333333333336,16.659005367517835L24.444444444444443,17.021874449163633L25.555555555555554,19.112925245306794L26.666666666666668,18.12790106901131L27.77777777777778,21.44584267954356L28.888888888888893,23.277676587186253L29.999999999999996,22.11984115189177L31.11111111111111,23.485015535732558L32.22222222222222,21.255750294643086L33.333333333333336,21.221222605095782L34.44444444444444,21.342155924142588L35.55555555555556,19.596831332756494L36.666666666666664,18.438961335210298L37.77777777777778,19.6658867118511L38.888888888888886,18.438961335210298L40,20.80647558349779L41.111111111111114,23.968921623182258L42.22222222222222,22.880210691487765L43.33333333333333,23.640580231083764L44.44444444444444,28.0645830237154L45.55555555555556,25.334096007023046L46.66666666666667,24.677413222826054L47.77777777777778,25.938935413521513L48.888888888888886,24.694694348725562L50,21.18662579104309L51.11111111111111,23.20855208358626L52.22222222222222,27.06220859701502L53.333333333333336,24.193541697628067L54.44444444444445,22.897491817387273L55.55555555555556,24.418196334327554L56.666666666666664,27.442393366814L57.777777777777786,21.445877241795273L58.88888888888889,19.49311001510381L59.99999999999999,21.670497316241082L61.111111111111114,26.422806938719503L62.22222222222222,28.2373942827144L63.333333333333336,30L64.44444444444444,28.7730746233592L65.55555555555556,26.388244686918522L66.66666666666667,22.08524433783908L67.77777777777777,20.4608876277515L68.88888888888889,13.496559327833367L70,4.389371416325268L71.11111111111111,8.346783809658426L72.22222222222223,11.612882042490192L73.33333333333333,13.35827575838167L74.44444444444444,7.8801588481082305L75.55555555555556,8.018442417559932L76.66666666666667,4.838680689724242L77.77777777777777,1.9008892867373L78.88888888888889,1.8663615971899965L80,0.3629036438975106L81.11111111111111,3.6808452544297587L82.22222222222223,3.300695046882492L83.33333333333333,5.287989963121252L84.44444444444444,7.448130700610729L85.55555555555556,7.534570892361945L86.66666666666666,7.9147556621589565L87.77777777777779,4.890524067422767L88.88888888888889,4.925086319221776L90,3.680914378933185L91.11111111111111,3.577158499028787L92.22222222222221,0.6220859701423329L93.33333333333334,0.017281125899508254L94.44444444444444,0L95.55555555555556,1.7108314640905036L96.66666666666667,0.9850241762954823L97.77777777777777,0.6393670960438058L98.88888888888889,1.2960498802388294L100,2.0910162338875153L101.11111111111111,2.747664455832794L102.22222222222221,2.747664455832794L103.33333333333334,4.3375280386267505L104.44444444444444,5.979234999119221L105.55555555555556,3.767250883927293L106.66666666666667,3.6117553130814777L107.77777777777777,5.547206851619755L108.8888888888889,1.8317647831373023L110,0.06912450359802591L110,30L108.8888888888889,30L107.77777777777777,30L106.66666666666667,30L105.55555555555556,30L104.44444444444444,30L103.33333333333334,30L102.22222222222221,30L101.11111111111111,30L100,30L98.88888888888889,30L97.77777777777777,30L96.66666666666667,30L95.55555555555556,30L94.44444444444444,30L93.33333333333334,30L92.22222222222221,30L91.11111111111111,30L90,30L88.88888888888889,30L87.77777777777779,30L86.66666666666666,30L85.55555555555556,30L84.44444444444444,30L83.33333333333333,30L82.22222222222223,30L81.11111111111111,30L80,30L78.88888888888889,30L77.77777777777777,30L76.66666666666667,30L75.55555555555556,30L74.44444444444444,30L73.33333333333333,30L72.22222222222223,30L71.11111111111111,30L70,30L68.88888888888889,30L67.77777777777777,30L66.66666666666667,30L65.55555555555556,30L64.44444444444444,30L63.333333333333336,30L62.22222222222222,30L61.111111111111114,30L59.99999999999999,30L58.88888888888889,30L57.777777777777786,30L56.666666666666664,30L55.55555555555556,30L54.44444444444445,30L53.333333333333336,30L52.22222222222222,30L51.11111111111111,30L50,30L48.888888888888886,30L47.77777777777778,30L46.66666666666667,30L45.55555555555556,30L44.44444444444444,30L43.33333333333333,30L42.22222222222222,30L41.111111111111114,30L40,30L38.888888888888886,30L37.77777777777778,30L36.666666666666664,30L35.55555555555556,30L34.44444444444444,30L33.333333333333336,30L32.22222222222222,30L31.11111111111111,30L29.999999999999996,30L28.888888888888893,30L27.77777777777778,30L26.666666666666668,30L25.555555555555554,30L24.444444444444443,30L23.333333333333336,30L22.22222222222222,30L21.11111111111111,30L20,30L18.88888888888889,30L17.77777777777778,30L16.666666666666668,30L15.555555555555555,30L14.444444444444446,30L13.333333333333334,30L12.222222222222221,30L11.11111111111111,30L10,30L8.88888888888889,30L7.777777777777778,30L6.666666666666667,30L5.555555555555555,30L4.444444444444445,30L3.3333333333333335,30L2.2222222222222223,30L1.1111111111111112,30L0,30Z"></path>
+                            <defs>
+                                <linearGradient id="slPositiveGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%">
+                                    <stop offset="0%" stop-color="rgb(53, 169, 71)" style="stop-opacity: 0.15;"></stop>
+                                    <stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop>
+                                </linearGradient>
+                            </defs>
+                            <defs>
+                                <linearGradient id="slNegativeGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%">
+                                    <stop offset="0%" stop-color="rgb(227, 72, 40)" style="stop-opacity: 0.15;"></stop>
+                                    <stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="StoryStandardContent__graphChange">
+                        <div class="StoryStandardContent__graphChangeValue">+0.19%</div>
+                        <div class="StoryStandardContent__graphChangePeriod"><span>Изм. за 1 день</span></div>
+                    </div>
+                </div>
+                <div class="StoryStandardContent__footer StoryStandardContent__footer_graph">
+                    <div class="StoryStandardContent__footerText"><b>9.49%</b>
+                        <!-- react-text: 5453 -->
+                        <!-- /react-text -->
+                        <!-- react-text: 5454 -->с плечом 50
+                        <!-- /react-text -->
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="Task__card">
+            <a class="TaskList" aria-current="false" href="/en/stocks/BABA">
+                <div class="TaskList__Header">
+                    <button class="CardButton TaskList__Button">
+                        <div class="CardButton__Icon" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/e7/5491c411c.svg&quot;);"></div>
+                        <div class="CardButton__Label"><span>Trade Now</span></div>
+                    </button>
+                    <div class="TaskList__Text">
+                        <div class="TaskList__Title"><span><span>Alibaba Group</span></span>
+                        </div>
+                        <div class="TaskList__Value"><span class="TaskList__ValueCurrent"><!-- react-text: 8145 -->$<!-- /react-text --><!-- react-text: 8146 -->177.55<!-- /react-text --></span><span class="TaskList__ValueChange TaskList__ValueChange_positive"><span class="Percent Percent_positive"><!-- react-text: 8149 -->+99.62%<!-- /react-text --></span>
+                            <!-- react-text: 8150 -->
+                            <!-- /react-text --><span>YTD</span></span>
+                            <div class="CardTimeLoop TaskList__timeLoop">
+                                <div class="CardTimeLoop__wrap">
+                                    <svg width="11" height="11">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_general_timeloop"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="TaskList__FooterWrapper">
+                    <div class="TaskList__Line">
+                        <svg width="118" height="42">
+                            <path class="SparkLine__line SparkLine__line_positive" d="M0,37.72833329324321L1.191919191919192,37.702354893801264L2.383838383838384,38.877155846342575L3.5757575757575757,39.28607509681765L4.767676767676768,39.05323166478243L5.959595959595959,40L7.151515151515151,39.78832415269526L8.343434343434343,39.657469992543234L9.535353535353536,37.79376037331922L10.727272727272728,37.28092752507637L11.919191919191919,36.14749957905371L13.11111111111111,36.35725110047387L14.303030303030303,36.420753854665286L15.494949494949497,36.39285112933876L16.686868686868685,33.824838236355326L17.87878787878788,34.02400596541025L19.070707070707073,34.457941452384965L20.262626262626263,34.8379958145912L21.454545454545457,34.704255165612295L22.646464646464644,33.605465085512236L23.838383838383837,34.0143843359873L25.03030303030303,34.329011618117526L26.22222222222222,34.637865922593996L27.414141414141415,33.68724893560724L28.606060606060606,33.821951747528445L29.7979797979798,33.62085969258894L30.989898989898993,33.68628677266495L32.18181818181818,33.79885983691338L33.37373737373737,33.27929184807447L34.56565656565657,33.40725951939961L35.75757575757576,32.45471820652827L36.94949494949495,32.17472879032064L38.141414141414145,31.839896086402234L39.33333333333333,31.401149784716047L40.525252525252526,31.938998869458537L41.717171717171716,31.95439347653525L42.909090909090914,30.66124648209174L44.101010101010104,30.686262718591394L45.29292929292929,30.698770836841216L46.484848484848484,29.551872609626443L47.676767676767675,29.07945060495995L48.86868686868687,28.73788276044548L50.06060606060606,28.688812450388472L51.25252525252525,28.601255622639698L52.44444444444444,27.194573401005464L53.63636363636363,26.17660500805811L54.82828282828283,26.85685420826017L56.02020202020202,25.737858706371924L57.21212121212121,25.761912779929283L58.40404040404041,25.981285930772376L59.5959595959596,25.40206383951122L60.78787878787879,21.82955283477257L61.979797979797986,19.843648521877185L63.17171717171717,21.144492819859046L64.36363636363636,19.965843215548556L65.55555555555556,18.472566329107835L66.74747474747474,18.73331248646959L67.93939393939394,19.212469631732134L69.13131313131314,18.409063574916406L70.32323232323232,18.336901354244336L71.51515151515152,16.020975152142015L72.7070707070707,15.101147379308681L73.8989898989899,14.625838885815313L75.0909090909091,14.908714790849835L76.28282828282829,13.75315709715441L77.47474747474747,13.812811199576643L78.66666666666666,14.698963269429676L79.85858585858587,12.56584802636327L81.05050505050505,15.06554735044379L82.24242424242425,13.289394558968564L83.43434343434343,9.587953719962474L84.62626262626262,6.067399514107706L85.81818181818183,6.67837298246458L87.01010101010101,8.20051475717413L88.20202020202021,7.545281793471723L89.39393939393939,8.211098549539358L90.58585858585857,6.209799629567264L91.77777777777779,5.242825872561518L92.96969696969697,4.158468236595866L94.16161616161617,5.040771654679716L95.35353535353535,8.403531137998215L96.54545454545455,7.280686984340797L97.73737373737374,4.7020902989921325L98.92929292929293,4.5009982440526315L100.12121212121212,2.683472446058744L101.31313131313131,4.48560363697591L102.5050505050505,5.131214971255375L103.6969696969697,5.934621028071099L104.88888888888889,7.899357756236014L106.08080808080808,4.513506362302458L107.27272727272727,1.9762826834724407L108.46464646464646,0.9977629711591689L109.65656565656566,2.0513313929713917L110.84848484848486,2.8701320568638238L112.04040404040404,2.0850070959516955L113.23232323232322,0.46857335289730173L114.42424242424242,0L115.61616161616162,2.846077983306465L116.80808080808082,5.67772352247853L118,5.672912707767054"></path>
+                            <path class="SparkLine__area SparkLine__area_positive" d="M0,37.72833329324321L1.191919191919192,37.702354893801264L2.383838383838384,38.877155846342575L3.5757575757575757,39.28607509681765L4.767676767676768,39.05323166478243L5.959595959595959,40L7.151515151515151,39.78832415269526L8.343434343434343,39.657469992543234L9.535353535353536,37.79376037331922L10.727272727272728,37.28092752507637L11.919191919191919,36.14749957905371L13.11111111111111,36.35725110047387L14.303030303030303,36.420753854665286L15.494949494949497,36.39285112933876L16.686868686868685,33.824838236355326L17.87878787878788,34.02400596541025L19.070707070707073,34.457941452384965L20.262626262626263,34.8379958145912L21.454545454545457,34.704255165612295L22.646464646464644,33.605465085512236L23.838383838383837,34.0143843359873L25.03030303030303,34.329011618117526L26.22222222222222,34.637865922593996L27.414141414141415,33.68724893560724L28.606060606060606,33.821951747528445L29.7979797979798,33.62085969258894L30.989898989898993,33.68628677266495L32.18181818181818,33.79885983691338L33.37373737373737,33.27929184807447L34.56565656565657,33.40725951939961L35.75757575757576,32.45471820652827L36.94949494949495,32.17472879032064L38.141414141414145,31.839896086402234L39.33333333333333,31.401149784716047L40.525252525252526,31.938998869458537L41.717171717171716,31.95439347653525L42.909090909090914,30.66124648209174L44.101010101010104,30.686262718591394L45.29292929292929,30.698770836841216L46.484848484848484,29.551872609626443L47.676767676767675,29.07945060495995L48.86868686868687,28.73788276044548L50.06060606060606,28.688812450388472L51.25252525252525,28.601255622639698L52.44444444444444,27.194573401005464L53.63636363636363,26.17660500805811L54.82828282828283,26.85685420826017L56.02020202020202,25.737858706371924L57.21212121212121,25.761912779929283L58.40404040404041,25.981285930772376L59.5959595959596,25.40206383951122L60.78787878787879,21.82955283477257L61.979797979797986,19.843648521877185L63.17171717171717,21.144492819859046L64.36363636363636,19.965843215548556L65.55555555555556,18.472566329107835L66.74747474747474,18.73331248646959L67.93939393939394,19.212469631732134L69.13131313131314,18.409063574916406L70.32323232323232,18.336901354244336L71.51515151515152,16.020975152142015L72.7070707070707,15.101147379308681L73.8989898989899,14.625838885815313L75.0909090909091,14.908714790849835L76.28282828282829,13.75315709715441L77.47474747474747,13.812811199576643L78.66666666666666,14.698963269429676L79.85858585858587,12.56584802636327L81.05050505050505,15.06554735044379L82.24242424242425,13.289394558968564L83.43434343434343,9.587953719962474L84.62626262626262,6.067399514107706L85.81818181818183,6.67837298246458L87.01010101010101,8.20051475717413L88.20202020202021,7.545281793471723L89.39393939393939,8.211098549539358L90.58585858585857,6.209799629567264L91.77777777777779,5.242825872561518L92.96969696969697,4.158468236595866L94.16161616161617,5.040771654679716L95.35353535353535,8.403531137998215L96.54545454545455,7.280686984340797L97.73737373737374,4.7020902989921325L98.92929292929293,4.5009982440526315L100.12121212121212,2.683472446058744L101.31313131313131,4.48560363697591L102.5050505050505,5.131214971255375L103.6969696969697,5.934621028071099L104.88888888888889,7.899357756236014L106.08080808080808,4.513506362302458L107.27272727272727,1.9762826834724407L108.46464646464646,0.9977629711591689L109.65656565656566,2.0513313929713917L110.84848484848486,2.8701320568638238L112.04040404040404,2.0850070959516955L113.23232323232322,0.46857335289730173L114.42424242424242,0L115.61616161616162,2.846077983306465L116.80808080808082,5.67772352247853L118,5.672912707767054L118,40L116.80808080808082,40L115.61616161616162,40L114.42424242424242,40L113.23232323232322,40L112.04040404040404,40L110.84848484848486,40L109.65656565656566,40L108.46464646464646,40L107.27272727272727,40L106.08080808080808,40L104.88888888888889,40L103.6969696969697,40L102.5050505050505,40L101.31313131313131,40L100.12121212121212,40L98.92929292929293,40L97.73737373737374,40L96.54545454545455,40L95.35353535353535,40L94.16161616161617,40L92.96969696969697,40L91.77777777777779,40L90.58585858585857,40L89.39393939393939,40L88.20202020202021,40L87.01010101010101,40L85.81818181818183,40L84.62626262626262,40L83.43434343434343,40L82.24242424242425,40L81.05050505050505,40L79.85858585858587,40L78.66666666666666,40L77.47474747474747,40L76.28282828282829,40L75.0909090909091,40L73.8989898989899,40L72.7070707070707,40L71.51515151515152,40L70.32323232323232,40L69.13131313131314,40L67.93939393939394,40L66.74747474747474,40L65.55555555555556,40L64.36363636363636,40L63.17171717171717,40L61.979797979797986,40L60.78787878787879,40L59.5959595959596,40L58.40404040404041,40L57.21212121212121,40L56.02020202020202,40L54.82828282828283,40L53.63636363636363,40L52.44444444444444,40L51.25252525252525,40L50.06060606060606,40L48.86868686868687,40L47.676767676767675,40L46.484848484848484,40L45.29292929292929,40L44.101010101010104,40L42.909090909090914,40L41.717171717171716,40L40.525252525252526,40L39.33333333333333,40L38.141414141414145,40L36.94949494949495,40L35.75757575757576,40L34.56565656565657,40L33.37373737373737,40L32.18181818181818,40L30.989898989898993,40L29.7979797979798,40L28.606060606060606,40L27.414141414141415,40L26.22222222222222,40L25.03030303030303,40L23.838383838383837,40L22.646464646464644,40L21.454545454545457,40L20.262626262626263,40L19.070707070707073,40L17.87878787878788,40L16.686868686868685,40L15.494949494949497,40L14.303030303030303,40L13.11111111111111,40L11.919191919191919,40L10.727272727272728,40L9.535353535353536,40L8.343434343434343,40L7.151515151515151,40L5.959595959595959,40L4.767676767676768,40L3.5757575757575757,40L2.383838383838384,40L1.191919191919192,40L0,40Z"></path>
+                            <defs>
+                                <linearGradient id="slPositiveGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%">
+                                    <stop offset="0%" stop-color="rgb(53, 169, 71)" style="stop-opacity: 0.15;"></stop>
+                                    <stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop>
+                                </linearGradient>
+                            </defs>
+                            <defs>
+                                <linearGradient id="slNegativeGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%">
+                                    <stop offset="0%" stop-color="rgb(227, 72, 40)" style="stop-opacity: 0.15;"></stop>
+                                    <stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="TaskList__Footer">
+                        <div class="TaskList__FooterText"><span>1Y change</span></div>
+                        <div class="TaskList__FooterValue"><span class="Percent Percent_positive"><!-- react-text: 8164 -->+89.82%<!-- /react-text --></span></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="section">
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="section">
+            <a href="#">Blog</a>
+            <a href="#">Developers</a>
+            <a href="#">API</a>
+        </div>
+        <div class="section">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+        </div>
+        <div class="section">
             <div class="logo">
                 <div class="icon">
                     S
@@ -29,111 +278,17 @@
                     </div>
                 </div>
             </div>
-            <div class="search">
-                <input type="text" name="search" value=""   placeholder="Find users">
-            </div>
-            <div class="lines">
-                 <div class="section">
-                    <a href="#">Projects</a>
-                </div>
-                <div class="section">
-                    <a href="#">Questions</a>
-                </div>
-                <div class="section">
-                    <a href="./users/users.html">Team</a>
-                </div>
-                <div class="section">
-                    <a href="./login/signin.html">Sing In</a>
-                </div>
-            </div>
-            
-        </header>
-                <div class="HeaderPage HeaderPage_btnBack"><a class="BtnBack HeaderPage__btnBack active" aria-current="true" href="/en/collections"><svg class="BtnBack__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_general_left-line-arrow"></use></svg><span>Stocks Collections</span></a><div class="HeaderPage__wrapper iqWrapper"><div class="HeaderPage__content"><div class="HeaderPageContent"><h1 class="HeaderPageContent__title"><span>IT &amp; Internet Blue Chips</span></h1><div class="HeaderPageContent__subtitle"><span>Internet companies are the greatest venues of opportunities  for the investors and now you can choose your own unicorn.</span></div></div></div></div><div class="HeaderPage__bg"><div class="HeaderPage__bgGradient" style="background-image: linear-gradient(rgba(11, 56, 130, 0.3) 0%, rgba(11, 56, 130, 0.8) 100%);"></div><div class="HeaderPage__bgImage" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/c0/0f3e7b3f8.jpg&quot;);"></div></div></div>
-        <div id="main" class="container">
-
-
-
-            <div data-index="0" class="slick-slide slick-active">
-                <div class="Comment__quote">
-                    <div class="Comment__quoteInfo">
-                        <img class="Comment__quoteAvatar" src="../img/user1.jpeg">
-                        <div>
-                            <div class="Comment__quoteAuthor">
-                                <span>Билл Гейтс</span>
-                            </div>
-                        <div class="Comment__quotePosition">
-                            <span>Американский бизнес-магнат, соучредитель Microsoft</span>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="Comment__quoteText">
-                        <span>Биткойны лучше, чем валюта, ведь с ними необязательно оставаться физически на одном месте. К тому же, иногда совершать крупные транзакции обычной валютой попросту неудобно.</span>
-                    </div>
-                </div>
-            </div>
-
-
-            Risks
-            <div class="RiskSection">
-                <div class="Risk RiskSection__item">
-                    <div class="Risk__wrapper">
-                        <div class="Risk__icon" style="background-image: url(&quot;https://static.iqoption.com/v5/static/images/try.263e6033f3fa7eec9e0e76d487862142.svg&quot;);">
-                            
-                        </div><div class="Risk__content"><div class="Risk__date"><span>11 декабря 2017 г., 07:00</span></div><div class="Risk__title"><span><span>GDP Growth Rate YoY</span></span></div><div class="Risk__currency"><span>TRY — турецкая лира</span></div></div><div class="Risk__projectionWrap"><div class="Risk__projection"><div class="Risk__projectionVal">10.0%</div><div class="Risk__projectionUnit"><span>Прогноз</span></div></div><div class="Risk__projection"><div class="Risk__projectionVal">5.1%</div><div class="Risk__projectionUnit"><span>Раньше</span></div></div></div></div></div><div class="Risk RiskSection__item"><div class="Risk__wrapper"><div class="Risk__icon" style="background-image: url(&quot;https://static.iqoption.com/v5/static/images/try.263e6033f3fa7eec9e0e76d487862142.svg&quot;);"></div><div class="Risk__content"><div class="Risk__date"><span>11 декабря 2017 г., 07:00</span></div><div class="Risk__title"><span><span>GDP Growth Rate QoQ</span></span></div><div class="Risk__currency"><span>TRY — турецкая лира</span></div></div><div class="Risk__projectionWrap"><div class="Risk__projection"><div class="Risk__projectionVal">-</div><div class="Risk__projectionUnit"><span>Прогноз</span></div></div><div class="Risk__projection"><div class="Risk__projectionVal">2.1%</div><div class="Risk__projectionUnit"><span>Раньше</span></div></div></div></div></div></div>
-
-
-
-        <div class="IncedentList__card"><div class="IncedentItem"><a class="IncedentItem__wrapper" aria-current="false" href="/ru/analysis/forex-market-economic-calendar-for-friday-8th-december-2017"><img class="IncedentItem__image" src="https://static.iqoption.com/v5/static/images/15.f1ba4ccea7a634f2a3544c3ac3deda50.jpg" alt="Stavros Georgiadis"><div class="IncedentItem__content"><div class="IncedentItem__title"><span>Forex Market Economic Calendar for Friday 8th December 2017</span></div><div class="IncedentItem__info"><div class="IncedentItem__user">Stavros Georgiadis</div><span>2 дня назад</span></div><div class="IncedentItem__tags"><span class="IncedentItem__tag">AUD</span><span class="IncedentItem__tag">CAD</span><span class="IncedentItem__tag">CHF</span><span class="IncedentItem__tag">EUR</span><span class="IncedentItem__tag">GBP</span><span class="IncedentItem__tag">JPY</span><span class="IncedentItem__tag">USD</span></div></div></a></div></div>
-
-
-
-        <a class="StoryStandard" aria-current="false" href="/ru/forex/EURJPY"><div class="StoryStandardHeader"><div class="StoryStandardHeader__bg" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/cc/efc3415fd.jpg&quot;);"><img class="StoryStandardHeader__round" src="https://static.iqoption.com/v5/static/images/mask.7fbee3fac85c8080dbf5c8a53fd69318.png"></div><div class="StoryStandardHeader__btn ignoreAsideClose"><div class="StoryStandardHeader__btnIcon" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/cb/bd5316287.svg&quot;);"></div><div class="StoryStandardHeader__btnLabel"><span>Торговать </span></div></div></div><div class="StoryStandardContent StoryStandardContent_graph"><div class="StoryStandardContent__title"><span><span>EUR/JPY</span></span></div><div class="StoryStandardContent__graph"><div class="StoryStandardContent__graphItem"><svg width="110" height="32"><path class="SparkLine__line SparkLine__line_positive" d="M0,17.557589352060145L1.1111111111111112,18.04146087725813L2.2222222222222223,18.49080471290882L3.3333333333333335,16.84906319016463L4.444444444444445,16.849132314668058L5.555555555555555,14.930892777525862L6.666666666666667,12.563343966984693L7.777777777777778,11.163572769093182L8.88888888888889,14.965455029326842L10,15.79491451027112L11.11111111111111,16.84906319016463L12.222222222222221,18.04146087725813L13.333333333333334,18.352521143457118L14.444444444444446,20.892846650743614L15.555555555555555,20.80647558349779L16.666666666666668,21.601407374894762L17.77777777777778,24.02076500088078L18.88888888888889,22.51727248533658L20,14.222332053376673L21.11111111111111,18.7845838532083L22.22222222222222,16.935468819664134L23.333333333333336,16.659005367517835L24.444444444444443,17.021874449163633L25.555555555555554,19.112925245306794L26.666666666666668,18.12790106901131L27.77777777777778,21.44584267954356L28.888888888888893,23.277676587186253L29.999999999999996,22.11984115189177L31.11111111111111,23.485015535732558L32.22222222222222,21.255750294643086L33.333333333333336,21.221222605095782L34.44444444444444,21.342155924142588L35.55555555555556,19.596831332756494L36.666666666666664,18.438961335210298L37.77777777777778,19.6658867118511L38.888888888888886,18.438961335210298L40,20.80647558349779L41.111111111111114,23.968921623182258L42.22222222222222,22.880210691487765L43.33333333333333,23.640580231083764L44.44444444444444,28.0645830237154L45.55555555555556,25.334096007023046L46.66666666666667,24.677413222826054L47.77777777777778,25.938935413521513L48.888888888888886,24.694694348725562L50,21.18662579104309L51.11111111111111,23.20855208358626L52.22222222222222,27.06220859701502L53.333333333333336,24.193541697628067L54.44444444444445,22.897491817387273L55.55555555555556,24.418196334327554L56.666666666666664,27.442393366814L57.777777777777786,21.445877241795273L58.88888888888889,19.49311001510381L59.99999999999999,21.670497316241082L61.111111111111114,26.422806938719503L62.22222222222222,28.2373942827144L63.333333333333336,30L64.44444444444444,28.7730746233592L65.55555555555556,26.388244686918522L66.66666666666667,22.08524433783908L67.77777777777777,20.4608876277515L68.88888888888889,13.496559327833367L70,4.389371416325268L71.11111111111111,8.346783809658426L72.22222222222223,11.612882042490192L73.33333333333333,13.35827575838167L74.44444444444444,7.8801588481082305L75.55555555555556,8.018442417559932L76.66666666666667,4.838680689724242L77.77777777777777,1.9008892867373L78.88888888888889,1.8663615971899965L80,0.3629036438975106L81.11111111111111,3.6808452544297587L82.22222222222223,3.300695046882492L83.33333333333333,5.287989963121252L84.44444444444444,7.448130700610729L85.55555555555556,7.534570892361945L86.66666666666666,7.9147556621589565L87.77777777777779,4.890524067422767L88.88888888888889,4.925086319221776L90,3.680914378933185L91.11111111111111,3.577158499028787L92.22222222222221,0.6220859701423329L93.33333333333334,0.017281125899508254L94.44444444444444,0L95.55555555555556,1.7108314640905036L96.66666666666667,0.9850241762954823L97.77777777777777,0.6393670960438058L98.88888888888889,1.2960498802388294L100,2.0910162338875153L101.11111111111111,2.747664455832794L102.22222222222221,2.747664455832794L103.33333333333334,4.3375280386267505L104.44444444444444,5.979234999119221L105.55555555555556,3.767250883927293L106.66666666666667,3.6117553130814777L107.77777777777777,5.547206851619755L108.8888888888889,1.8317647831373023L110,0.06912450359802591"></path><path class="SparkLine__area SparkLine__area_positive" d="M0,17.557589352060145L1.1111111111111112,18.04146087725813L2.2222222222222223,18.49080471290882L3.3333333333333335,16.84906319016463L4.444444444444445,16.849132314668058L5.555555555555555,14.930892777525862L6.666666666666667,12.563343966984693L7.777777777777778,11.163572769093182L8.88888888888889,14.965455029326842L10,15.79491451027112L11.11111111111111,16.84906319016463L12.222222222222221,18.04146087725813L13.333333333333334,18.352521143457118L14.444444444444446,20.892846650743614L15.555555555555555,20.80647558349779L16.666666666666668,21.601407374894762L17.77777777777778,24.02076500088078L18.88888888888889,22.51727248533658L20,14.222332053376673L21.11111111111111,18.7845838532083L22.22222222222222,16.935468819664134L23.333333333333336,16.659005367517835L24.444444444444443,17.021874449163633L25.555555555555554,19.112925245306794L26.666666666666668,18.12790106901131L27.77777777777778,21.44584267954356L28.888888888888893,23.277676587186253L29.999999999999996,22.11984115189177L31.11111111111111,23.485015535732558L32.22222222222222,21.255750294643086L33.333333333333336,21.221222605095782L34.44444444444444,21.342155924142588L35.55555555555556,19.596831332756494L36.666666666666664,18.438961335210298L37.77777777777778,19.6658867118511L38.888888888888886,18.438961335210298L40,20.80647558349779L41.111111111111114,23.968921623182258L42.22222222222222,22.880210691487765L43.33333333333333,23.640580231083764L44.44444444444444,28.0645830237154L45.55555555555556,25.334096007023046L46.66666666666667,24.677413222826054L47.77777777777778,25.938935413521513L48.888888888888886,24.694694348725562L50,21.18662579104309L51.11111111111111,23.20855208358626L52.22222222222222,27.06220859701502L53.333333333333336,24.193541697628067L54.44444444444445,22.897491817387273L55.55555555555556,24.418196334327554L56.666666666666664,27.442393366814L57.777777777777786,21.445877241795273L58.88888888888889,19.49311001510381L59.99999999999999,21.670497316241082L61.111111111111114,26.422806938719503L62.22222222222222,28.2373942827144L63.333333333333336,30L64.44444444444444,28.7730746233592L65.55555555555556,26.388244686918522L66.66666666666667,22.08524433783908L67.77777777777777,20.4608876277515L68.88888888888889,13.496559327833367L70,4.389371416325268L71.11111111111111,8.346783809658426L72.22222222222223,11.612882042490192L73.33333333333333,13.35827575838167L74.44444444444444,7.8801588481082305L75.55555555555556,8.018442417559932L76.66666666666667,4.838680689724242L77.77777777777777,1.9008892867373L78.88888888888889,1.8663615971899965L80,0.3629036438975106L81.11111111111111,3.6808452544297587L82.22222222222223,3.300695046882492L83.33333333333333,5.287989963121252L84.44444444444444,7.448130700610729L85.55555555555556,7.534570892361945L86.66666666666666,7.9147556621589565L87.77777777777779,4.890524067422767L88.88888888888889,4.925086319221776L90,3.680914378933185L91.11111111111111,3.577158499028787L92.22222222222221,0.6220859701423329L93.33333333333334,0.017281125899508254L94.44444444444444,0L95.55555555555556,1.7108314640905036L96.66666666666667,0.9850241762954823L97.77777777777777,0.6393670960438058L98.88888888888889,1.2960498802388294L100,2.0910162338875153L101.11111111111111,2.747664455832794L102.22222222222221,2.747664455832794L103.33333333333334,4.3375280386267505L104.44444444444444,5.979234999119221L105.55555555555556,3.767250883927293L106.66666666666667,3.6117553130814777L107.77777777777777,5.547206851619755L108.8888888888889,1.8317647831373023L110,0.06912450359802591L110,30L108.8888888888889,30L107.77777777777777,30L106.66666666666667,30L105.55555555555556,30L104.44444444444444,30L103.33333333333334,30L102.22222222222221,30L101.11111111111111,30L100,30L98.88888888888889,30L97.77777777777777,30L96.66666666666667,30L95.55555555555556,30L94.44444444444444,30L93.33333333333334,30L92.22222222222221,30L91.11111111111111,30L90,30L88.88888888888889,30L87.77777777777779,30L86.66666666666666,30L85.55555555555556,30L84.44444444444444,30L83.33333333333333,30L82.22222222222223,30L81.11111111111111,30L80,30L78.88888888888889,30L77.77777777777777,30L76.66666666666667,30L75.55555555555556,30L74.44444444444444,30L73.33333333333333,30L72.22222222222223,30L71.11111111111111,30L70,30L68.88888888888889,30L67.77777777777777,30L66.66666666666667,30L65.55555555555556,30L64.44444444444444,30L63.333333333333336,30L62.22222222222222,30L61.111111111111114,30L59.99999999999999,30L58.88888888888889,30L57.777777777777786,30L56.666666666666664,30L55.55555555555556,30L54.44444444444445,30L53.333333333333336,30L52.22222222222222,30L51.11111111111111,30L50,30L48.888888888888886,30L47.77777777777778,30L46.66666666666667,30L45.55555555555556,30L44.44444444444444,30L43.33333333333333,30L42.22222222222222,30L41.111111111111114,30L40,30L38.888888888888886,30L37.77777777777778,30L36.666666666666664,30L35.55555555555556,30L34.44444444444444,30L33.333333333333336,30L32.22222222222222,30L31.11111111111111,30L29.999999999999996,30L28.888888888888893,30L27.77777777777778,30L26.666666666666668,30L25.555555555555554,30L24.444444444444443,30L23.333333333333336,30L22.22222222222222,30L21.11111111111111,30L20,30L18.88888888888889,30L17.77777777777778,30L16.666666666666668,30L15.555555555555555,30L14.444444444444446,30L13.333333333333334,30L12.222222222222221,30L11.11111111111111,30L10,30L8.88888888888889,30L7.777777777777778,30L6.666666666666667,30L5.555555555555555,30L4.444444444444445,30L3.3333333333333335,30L2.2222222222222223,30L1.1111111111111112,30L0,30Z"></path><defs><linearGradient id="slPositiveGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%"><stop offset="0%" stop-color="rgb(53, 169, 71)" style="stop-opacity: 0.15;"></stop><stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop></linearGradient></defs><defs><linearGradient id="slNegativeGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%"><stop offset="0%" stop-color="rgb(227, 72, 40)" style="stop-opacity: 0.15;"></stop><stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop></linearGradient></defs></svg></div><div class="StoryStandardContent__graphChange"><div class="StoryStandardContent__graphChangeValue">+0.19%</div><div class="StoryStandardContent__graphChangePeriod"><span>Изм. за 1 день</span></div></div></div><div class="StoryStandardContent__footer StoryStandardContent__footer_graph"><div class="StoryStandardContent__footerText"><b>9.49%</b><!-- react-text: 5453 --> <!-- /react-text --><!-- react-text: 5454 -->с плечом 50<!-- /react-text --></div></div></div></a>
-
-
-        <div class="Task__card"><a class="TaskList" aria-current="false" href="/en/stocks/BABA"><div class="TaskList__Header"><button class="CardButton TaskList__Button"><div class="CardButton__Icon" style="background-image: url(&quot;https://files.iqoption.com/storage/public/59/e7/5491c411c.svg&quot;);"></div><div class="CardButton__Label"><span>Trade Now</span></div></button><div class="TaskList__Text"><div class="TaskList__Title"><span><span>Alibaba Group</span></span></div><div class="TaskList__Value"><span class="TaskList__ValueCurrent"><!-- react-text: 8145 -->$<!-- /react-text --><!-- react-text: 8146 -->177.55<!-- /react-text --></span><span class="TaskList__ValueChange TaskList__ValueChange_positive"><span class="Percent Percent_positive"><!-- react-text: 8149 -->+99.62%<!-- /react-text --></span><!-- react-text: 8150 --> <!-- /react-text --><span>YTD</span></span><div class="CardTimeLoop TaskList__timeLoop"><div class="CardTimeLoop__wrap"><svg width="11" height="11"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon_general_timeloop"></use></svg></div></div></div></div></div><div class="TaskList__FooterWrapper"><div class="TaskList__Line"><svg width="118" height="42"><path class="SparkLine__line SparkLine__line_positive" d="M0,37.72833329324321L1.191919191919192,37.702354893801264L2.383838383838384,38.877155846342575L3.5757575757575757,39.28607509681765L4.767676767676768,39.05323166478243L5.959595959595959,40L7.151515151515151,39.78832415269526L8.343434343434343,39.657469992543234L9.535353535353536,37.79376037331922L10.727272727272728,37.28092752507637L11.919191919191919,36.14749957905371L13.11111111111111,36.35725110047387L14.303030303030303,36.420753854665286L15.494949494949497,36.39285112933876L16.686868686868685,33.824838236355326L17.87878787878788,34.02400596541025L19.070707070707073,34.457941452384965L20.262626262626263,34.8379958145912L21.454545454545457,34.704255165612295L22.646464646464644,33.605465085512236L23.838383838383837,34.0143843359873L25.03030303030303,34.329011618117526L26.22222222222222,34.637865922593996L27.414141414141415,33.68724893560724L28.606060606060606,33.821951747528445L29.7979797979798,33.62085969258894L30.989898989898993,33.68628677266495L32.18181818181818,33.79885983691338L33.37373737373737,33.27929184807447L34.56565656565657,33.40725951939961L35.75757575757576,32.45471820652827L36.94949494949495,32.17472879032064L38.141414141414145,31.839896086402234L39.33333333333333,31.401149784716047L40.525252525252526,31.938998869458537L41.717171717171716,31.95439347653525L42.909090909090914,30.66124648209174L44.101010101010104,30.686262718591394L45.29292929292929,30.698770836841216L46.484848484848484,29.551872609626443L47.676767676767675,29.07945060495995L48.86868686868687,28.73788276044548L50.06060606060606,28.688812450388472L51.25252525252525,28.601255622639698L52.44444444444444,27.194573401005464L53.63636363636363,26.17660500805811L54.82828282828283,26.85685420826017L56.02020202020202,25.737858706371924L57.21212121212121,25.761912779929283L58.40404040404041,25.981285930772376L59.5959595959596,25.40206383951122L60.78787878787879,21.82955283477257L61.979797979797986,19.843648521877185L63.17171717171717,21.144492819859046L64.36363636363636,19.965843215548556L65.55555555555556,18.472566329107835L66.74747474747474,18.73331248646959L67.93939393939394,19.212469631732134L69.13131313131314,18.409063574916406L70.32323232323232,18.336901354244336L71.51515151515152,16.020975152142015L72.7070707070707,15.101147379308681L73.8989898989899,14.625838885815313L75.0909090909091,14.908714790849835L76.28282828282829,13.75315709715441L77.47474747474747,13.812811199576643L78.66666666666666,14.698963269429676L79.85858585858587,12.56584802636327L81.05050505050505,15.06554735044379L82.24242424242425,13.289394558968564L83.43434343434343,9.587953719962474L84.62626262626262,6.067399514107706L85.81818181818183,6.67837298246458L87.01010101010101,8.20051475717413L88.20202020202021,7.545281793471723L89.39393939393939,8.211098549539358L90.58585858585857,6.209799629567264L91.77777777777779,5.242825872561518L92.96969696969697,4.158468236595866L94.16161616161617,5.040771654679716L95.35353535353535,8.403531137998215L96.54545454545455,7.280686984340797L97.73737373737374,4.7020902989921325L98.92929292929293,4.5009982440526315L100.12121212121212,2.683472446058744L101.31313131313131,4.48560363697591L102.5050505050505,5.131214971255375L103.6969696969697,5.934621028071099L104.88888888888889,7.899357756236014L106.08080808080808,4.513506362302458L107.27272727272727,1.9762826834724407L108.46464646464646,0.9977629711591689L109.65656565656566,2.0513313929713917L110.84848484848486,2.8701320568638238L112.04040404040404,2.0850070959516955L113.23232323232322,0.46857335289730173L114.42424242424242,0L115.61616161616162,2.846077983306465L116.80808080808082,5.67772352247853L118,5.672912707767054"></path><path class="SparkLine__area SparkLine__area_positive" d="M0,37.72833329324321L1.191919191919192,37.702354893801264L2.383838383838384,38.877155846342575L3.5757575757575757,39.28607509681765L4.767676767676768,39.05323166478243L5.959595959595959,40L7.151515151515151,39.78832415269526L8.343434343434343,39.657469992543234L9.535353535353536,37.79376037331922L10.727272727272728,37.28092752507637L11.919191919191919,36.14749957905371L13.11111111111111,36.35725110047387L14.303030303030303,36.420753854665286L15.494949494949497,36.39285112933876L16.686868686868685,33.824838236355326L17.87878787878788,34.02400596541025L19.070707070707073,34.457941452384965L20.262626262626263,34.8379958145912L21.454545454545457,34.704255165612295L22.646464646464644,33.605465085512236L23.838383838383837,34.0143843359873L25.03030303030303,34.329011618117526L26.22222222222222,34.637865922593996L27.414141414141415,33.68724893560724L28.606060606060606,33.821951747528445L29.7979797979798,33.62085969258894L30.989898989898993,33.68628677266495L32.18181818181818,33.79885983691338L33.37373737373737,33.27929184807447L34.56565656565657,33.40725951939961L35.75757575757576,32.45471820652827L36.94949494949495,32.17472879032064L38.141414141414145,31.839896086402234L39.33333333333333,31.401149784716047L40.525252525252526,31.938998869458537L41.717171717171716,31.95439347653525L42.909090909090914,30.66124648209174L44.101010101010104,30.686262718591394L45.29292929292929,30.698770836841216L46.484848484848484,29.551872609626443L47.676767676767675,29.07945060495995L48.86868686868687,28.73788276044548L50.06060606060606,28.688812450388472L51.25252525252525,28.601255622639698L52.44444444444444,27.194573401005464L53.63636363636363,26.17660500805811L54.82828282828283,26.85685420826017L56.02020202020202,25.737858706371924L57.21212121212121,25.761912779929283L58.40404040404041,25.981285930772376L59.5959595959596,25.40206383951122L60.78787878787879,21.82955283477257L61.979797979797986,19.843648521877185L63.17171717171717,21.144492819859046L64.36363636363636,19.965843215548556L65.55555555555556,18.472566329107835L66.74747474747474,18.73331248646959L67.93939393939394,19.212469631732134L69.13131313131314,18.409063574916406L70.32323232323232,18.336901354244336L71.51515151515152,16.020975152142015L72.7070707070707,15.101147379308681L73.8989898989899,14.625838885815313L75.0909090909091,14.908714790849835L76.28282828282829,13.75315709715441L77.47474747474747,13.812811199576643L78.66666666666666,14.698963269429676L79.85858585858587,12.56584802636327L81.05050505050505,15.06554735044379L82.24242424242425,13.289394558968564L83.43434343434343,9.587953719962474L84.62626262626262,6.067399514107706L85.81818181818183,6.67837298246458L87.01010101010101,8.20051475717413L88.20202020202021,7.545281793471723L89.39393939393939,8.211098549539358L90.58585858585857,6.209799629567264L91.77777777777779,5.242825872561518L92.96969696969697,4.158468236595866L94.16161616161617,5.040771654679716L95.35353535353535,8.403531137998215L96.54545454545455,7.280686984340797L97.73737373737374,4.7020902989921325L98.92929292929293,4.5009982440526315L100.12121212121212,2.683472446058744L101.31313131313131,4.48560363697591L102.5050505050505,5.131214971255375L103.6969696969697,5.934621028071099L104.88888888888889,7.899357756236014L106.08080808080808,4.513506362302458L107.27272727272727,1.9762826834724407L108.46464646464646,0.9977629711591689L109.65656565656566,2.0513313929713917L110.84848484848486,2.8701320568638238L112.04040404040404,2.0850070959516955L113.23232323232322,0.46857335289730173L114.42424242424242,0L115.61616161616162,2.846077983306465L116.80808080808082,5.67772352247853L118,5.672912707767054L118,40L116.80808080808082,40L115.61616161616162,40L114.42424242424242,40L113.23232323232322,40L112.04040404040404,40L110.84848484848486,40L109.65656565656566,40L108.46464646464646,40L107.27272727272727,40L106.08080808080808,40L104.88888888888889,40L103.6969696969697,40L102.5050505050505,40L101.31313131313131,40L100.12121212121212,40L98.92929292929293,40L97.73737373737374,40L96.54545454545455,40L95.35353535353535,40L94.16161616161617,40L92.96969696969697,40L91.77777777777779,40L90.58585858585857,40L89.39393939393939,40L88.20202020202021,40L87.01010101010101,40L85.81818181818183,40L84.62626262626262,40L83.43434343434343,40L82.24242424242425,40L81.05050505050505,40L79.85858585858587,40L78.66666666666666,40L77.47474747474747,40L76.28282828282829,40L75.0909090909091,40L73.8989898989899,40L72.7070707070707,40L71.51515151515152,40L70.32323232323232,40L69.13131313131314,40L67.93939393939394,40L66.74747474747474,40L65.55555555555556,40L64.36363636363636,40L63.17171717171717,40L61.979797979797986,40L60.78787878787879,40L59.5959595959596,40L58.40404040404041,40L57.21212121212121,40L56.02020202020202,40L54.82828282828283,40L53.63636363636363,40L52.44444444444444,40L51.25252525252525,40L50.06060606060606,40L48.86868686868687,40L47.676767676767675,40L46.484848484848484,40L45.29292929292929,40L44.101010101010104,40L42.909090909090914,40L41.717171717171716,40L40.525252525252526,40L39.33333333333333,40L38.141414141414145,40L36.94949494949495,40L35.75757575757576,40L34.56565656565657,40L33.37373737373737,40L32.18181818181818,40L30.989898989898993,40L29.7979797979798,40L28.606060606060606,40L27.414141414141415,40L26.22222222222222,40L25.03030303030303,40L23.838383838383837,40L22.646464646464644,40L21.454545454545457,40L20.262626262626263,40L19.070707070707073,40L17.87878787878788,40L16.686868686868685,40L15.494949494949497,40L14.303030303030303,40L13.11111111111111,40L11.919191919191919,40L10.727272727272728,40L9.535353535353536,40L8.343434343434343,40L7.151515151515151,40L5.959595959595959,40L4.767676767676768,40L3.5757575757575757,40L2.383838383838384,40L1.191919191919192,40L0,40Z"></path><defs><linearGradient id="slPositiveGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%"><stop offset="0%" stop-color="rgb(53, 169, 71)" style="stop-opacity: 0.15;"></stop><stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop></linearGradient></defs><defs><linearGradient id="slNegativeGradient" gradientUnits="userSpaceOnUse" x2="0" y2="100%"><stop offset="0%" stop-color="rgb(227, 72, 40)" style="stop-opacity: 0.15;"></stop><stop offset="100%" stop-color="rgb(255, 255, 255)" style="stop-opacity: 0.1;"></stop></linearGradient></defs></svg></div><div class="TaskList__Footer"><div class="TaskList__FooterText"><span>1Y change</span></div><div class="TaskList__FooterValue"><span class="Percent Percent_positive"><!-- react-text: 8164 -->+89.82%<!-- /react-text --></span></div></div></div></a></div>
-
         </div>
+        <div class="copy">
+            <div class="copyright">
+                2018 Sprint Management. All rights reserved.
+            </div>
 
-        <footer>
-            <div class="section">
-                 <a href="#">About Us</a>
-                 <a href="#">Careers</a>
-                 <a href="#">Contact</a>
+            <div>
+
             </div>
-            <div class="section">
-                 <a href="#">Blog</a>
-                 <a href="#">Developers</a>
-                 <a href="#">API</a>
-            </div>
-            <div class="section">
-                 <a href="#">Terms of Service</a>
-                 <a href="#">Privacy</a>
-                 <a href="#">Security</a>
-            </div>
-            <div class="section">
-                <div class="logo">
-                        <div class="icon">
-                            S
-                        </div>
-                        <div class="title">
-                            <div>
-                                Sprint
-                            </div>
-                            <div>
-                                Management
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="copy">
-                <div class="copyright">
-                    2018 Sprint Management. All rights reserved.
-                </div>
-                
-                <div>
-                    
-                </div>
-            </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
